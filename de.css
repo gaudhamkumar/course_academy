@@ -1,0 +1,1542 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Custom Shape Divider */
+.custom-shape-divider-bottom-1749369836 {
+    position: absolute;
+    top: 0;
+    /* Moves it to the top */
+    left: 0;
+    width: 100%;
+    height: 500px;
+    /* Adjust for better proportion */
+    z-index: -1;
+    /* Sends it to the back */
+    overflow: hidden;
+}
+
+.custom-shape-divider-bottom-1749369836 svg {
+    width: 100%;
+    height: 100%;
+
+    transform: scaleY(1.2);
+    /* Increase or decrease curve height */
+    transform: scaleX(1.2);
+}
+
+
+
+.custom-shape-divider-bottom-1749369836 .shape-fill {
+    fill: rgb(214, 77, 77);
+
+    /* Adjust the fill color if needed */
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin: 40px 0 30px;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    /* Vertically aligns the text and logo */
+    justify-content: center;
+    /* Centers everything */
+    gap: 15px;
+    /* Adds spacing between text and logo */
+}
+
+.title-container img {
+    width: 50px;
+    /* Adjust based on preferred size */
+    height: auto;
+}
+
+
+/* Mantra */
+.mantra h5 {
+    color: rgb(101, 98, 98);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.mantra h5:hover {
+    color: rgb(175, 35, 35);
+    cursor: pointer;
+}
+
+/* Theme Text */
+.theme {
+    text-align: center;
+    margin: 50px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+/* Navigation */
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 10px 15px;
+    /* Added padding for the box effect */
+    font-size: 18px;
+    display: inline-block;
+    /* Ensures proper spacing */
+
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: navajowhite;
+    text-underline-offset: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    /* Adds a white border */
+    border-radius: 5px;
+    /* Rounds the corners slightly */
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+.boxes {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    background-color: rgb(243, 217, 184);
+    width: 100%;
+    min-height: 400px;
+
+    overflow: hidden;
+    flex-wrap: wrap;
+
+}
+
+.box1 {
+    background-color: white;
+    color: black;
+    position: relative;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    width: 400px;
+    text-align: center;
+
+}
+
+.box2 {
+    background-color: white;
+    color: black;
+    position: relative;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    width: 400px;
+    text-align: center;
+
+}
+
+.box3 {
+    background-color: white;
+    color: black;
+    position: relative;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    width: 400px;
+    text-align: center;
+
+}
+
+.para-one {
+
+    position: absolute;
+    top: 70%;
+    /* Adjusted for proper centering */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Fix alignment */
+    background: lightblue;
+    opacity: 0.8;
+    color: darkslategrey;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+
+
+}
+
+.para-two {
+    position: absolute;
+    top: 70%;
+    /* Adjusted for proper centering */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Fix alignment */
+    background: lightblue;
+    opacity: 0.8;
+    color: darkslategrey;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.para-three {
+
+    position: absolute;
+    top: 70%;
+    /* Adjusted for proper centering */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Fix alignment */
+    background: lightblue;
+    opacity: 0.8;
+    color: darkslategrey;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.new-box1 {
+    background-color: rgb(87, 87, 238);
+    opacity: 0.8;
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+
+
+}
+
+.new-box2 {
+    background-color: rgb(87, 87, 238);
+    opacity: 0.8;
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+
+}
+
+.new-box3 {
+    background-color: rgb(87, 87, 238);
+    opacity: 0.8;
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+
+
+}
+
+.newpara-one {
+    color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    /* Adjust height dynamically */
+    width: 400px;
+    font-size: 13px;
+    text-align: center;
+    word-wrap: break-word;
+    /* Prevent overflow */
+    overflow: hidden;
+
+
+}
+
+.newpara-two {
+    color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    /* Adjust height dynamically */
+    width: 400px;
+    font-size: 13px;
+    text-align: center;
+    word-wrap: break-word;
+    /* Prevent overflow */
+    overflow: hidden;
+
+
+}
+
+.newpara-three {
+    color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    /* Adjust height dynamically */
+    width: 400px;
+    font-size: 13px;
+    text-align: center;
+    word-wrap: break-word;
+    /* Prevent overflow */
+    overflow: hidden;
+
+
+}
+
+/* The main list container */
+.full-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.list {
+    /* Flexbox properties to center the content (the <ul>) inside this div */
+    display: flex;
+    flex-direction: column;
+    /* Stack children vertically */
+    align-items: center;
+    /* Center children horizontally */
+    justify-content: center;
+    /* Center children vertically */
+
+    background-color: rgb(245, 211, 211);
+    color: rgb(147, 137, 222);
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    /* --- Responsiveness Fixes --- */
+    /* Use max-width to prevent it from getting too large on big screens */
+    max-width: 600px;
+    /* Use a percentage width to allow it to shrink on smaller screens */
+    width: 100%;
+    /* Use min-height instead of height to allow it to grow if content wraps */
+    min-height: 200px;
+
+
+
+    padding: 20px;
+    /* Use consistent padding */
+    margin: 10px;
+    box-sizing: border-box;
+    /* Important for responsive layouts */
+}
+
+/* Styling for the unordered list */
+.list ul {
+    /* Remove default list padding and margin */
+    padding-left: 30px;
+    margin: 0;
+    /* Ensure the list takes up the available space */
+    width: 100%;
+}
+
+/* Styling for the list items */
+.list li {
+    /* Add some space between list items */
+    margin-bottom: 40px;
+}
+
+/* Remove margin from the last list item */
+.list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Styling for the highlighted text */
+.list mark {
+    background-color: #d4f8e8;
+    color: #1a5c4a;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+
+
+img {
+    width: 400px;
+    height: 200px;
+}
+
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    /* CRITICAL: Stack h2 and image-cards-wrapper vertically */
+    align-items: center;
+    /* Centers h2 and image-cards-wrapper horizontally within .image-container */
+    background-color: lightblue;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 800px;
+    /* Allows container to grow if content exceeds 800px */
+    padding: 10px;
+    padding-bottom: 20px;
+    /* General padding at bottom of the main container */
+    gap: 20px;
+    /* NEW: Provides vertical gap between h2 and image-cards-wrapper */
+}
+
+/* Styles for the h2 inside the container */
+.image-container h2 {
+    margin-top: 40px;
+    /* Space above the h2 */
+    margin-bottom: 10px;
+    /* Space between h2 text and its underline */
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    width: 20%;
+    /* Ensures h2 takes 20% width for text-align to work */
+    position: relative;
+    /* Essential for positioning the ::after pseudo-element */
+}
+
+/* Underline effect for the title */
+.image-container h2::after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 4px;
+    background-color: #dd9f61;
+    position: absolute;
+    bottom: -10px;
+    /* Positioned 10px below the h2 */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centers the underline under the h2 */
+}
+
+/* Wrapper for the image cards: This is the horizontal flex container */
+.image-cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    /* CRITICAL: Cards will arrange horizontally within this wrapper */
+    justify-content: center;
+    /* Centers the group of cards horizontally within the row */
+
+    align-items: stretch;
+    /* CRITICAL: Cards stretch to uniform height within their row */
+    gap: 20px;
+    /* Space between individual image cards */
+    flex-wrap: wrap;
+    /* CRITICAL: Allows cards to wrap to a new line if space is limited */
+    width: 100%;
+    /* Ensures this wrapper spans the container's width */
+    padding-top: 20px;
+    /* Space between the h2's underline and the first row of cards */
+}
+
+
+/* Styles for individual image cards */
+.image-cards {
+    background-color: bisque;
+    width: 270px;
+    min-width: 200px;
+    /* Ensures card doesn't shrink below 200px on smaller screens */
+
+    display: flex;
+    flex-direction: column;
+    /* Stacks content (img, h3, p) vertically within the card */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+    /* Smooth transition for box-shadow on hover */
+    justify-content: space-between;
+    /* Distributes internal content (img, h3, p) vertically */
+    margin-bottom: 20px;
+    /*  Adds space between rows of wrapped cards */
+
+}
+
+/* Specific styles for images within the image cards */
+.image-cards img {
+    width: 300px;
+    /* Ensures image fills the card width */
+    height: 200px;
+    /* Fixed height for image */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    /* Smooth transition for image scale on hover */
+    flex-shrink: 0;
+    /* Prevents the image from shrinking */
+}
+
+/* Styling for headings and paragraphs within the image cards */
+.image-cards h3 {
+    margin: 20px;
+    text-align: center;
+}
+
+.image-cards p {
+    font-size: 15px;
+    margin: 20px;
+    padding: 10px;
+    flex-grow: 1;
+    /* Allows the paragraph to take up available vertical space */
+}
+
+/* Combined Hover Effects */
+.image-cards:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.image-cards:hover img {
+    transform: scale(1.1);
+}
+
+
+
+table {
+    margin-top: 20px;
+    color: rgb(7, 183, 7);
+    padding: 2px;
+    margin-bottom: 20px;
+
+}
+
+td {
+    padding: 5px;
+    text-align: center;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.title-container img {
+    width: 60px;
+    height: auto;
+    margin-left: 10px;
+
+}
+
+
+.title {
+    margin-top: 20px;
+    color: cornflowerblue;
+}
+
+.r-title {
+    margin-top: 20px;
+    color: cornflowerblue;
+}
+
+
+.list-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 247, 127);
+    color: rgb(170, 176, 174);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 160px;
+    height: 120px;
+    margin: 10px;
+    padding: 20px;
+
+
+}
+
+.training {
+    background-color: cornsilk;
+    width: 650px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 30px;
+
+}
+
+.scrollview {
+    font-size: 20px;
+    background: transparent;
+    padding: 15px;
+    border: none;
+    font-weight: bold;
+
+}
+
+/* this is image background section */
+.image-background {
+    position: relative;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.image-background img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.idea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(233, 233, 233);
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 18px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.idea h3 {
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.idea h3::after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 4px;
+    background-color: dodgerblue;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.idea p {
+    color: #ccb5a5;
+    font-size: 16px;
+    line-height: 1.4;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.idea a {
+    background: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 40px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.idea a:hover {
+    background: #e65c00;
+}
+
+
+.entire-container {
+    background-color: rgb(162, 117, 77);
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Ensures elements stack properly */
+    margin-top: 30px;
+    width: 100%;
+    /* Makes sure the container spans the full width */
+    height: auto;
+}
+
+.read-more-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 10px;
+    width: 80%;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.qa-container {
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.question {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.answer {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Ensuring bullet points align properly */
+.answer ul {
+    list-style-type: disc;
+    /* Bullet style */
+    list-style-position: inside;
+    /* Moves bullets inside the text block */
+
+    margin-left: 20px;
+}
+
+.answer li {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-left: 50px;
+}
+
+/* Centering button properly */
+.read-more-btn {
+    background: #ff6600;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    height: 40px;
+    width: 130px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+    display: block;
+    margin: 20px auto;
+    /* Centers the button */
+    text-align: center;
+}
+
+.read-more-btn:hover {
+    background: #e65c00;
+}
+
+.full-text {
+    display: none;
+}
+
+
+
+.branch-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.branches {
+    display: flex;
+    flex-direction: column;
+    /* Stack the title and the locations vertically */
+    align-items: center;
+    background-color: lavender;
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.branches h2 {
+    font-size: 30px;
+    color: rgb(233, 122, 122);
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    /* Remove default margin, add some at the bottom */
+    text-align: center;
+    position: relative;
+    /* For the ::after pseudo-element */
+}
+
+/* The underline for the main heading */
+.branches h2::after {
+    content: "";
+    display: block;
+    width: 50%;
+    /* Make underline relative to the text */
+    height: 4px;
+    background-color: #c66c13;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.branch-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* Align items to the top */
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+    width: 100%;
+    margin-top: 50px;
+    /* Space below the main title */
+}
+
+.branch-location {
+    display: flex;
+    flex-direction: column;
+    /* Stack the heading and cards vertically */
+    align-items: center;
+    flex-basis: 45%;
+    /* Each takes up 45% of the container width */
+    min-width: 300px;
+    /* Prevent them from getting too squished */
+    margin-bottom: 30px;
+}
+
+.branch-location h3 {
+    font-size: 24px;
+    color: blue;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    /* Space between the cards */
+}
+
+/* Combined styles for the location cards */
+.branch-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: palegreen;
+    color: #333;
+    height: 70px;
+    width: 180px;
+    border-radius: 5px;
+    border: 4px solid cadetblue;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.media {
+
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: aliceblue;
+    gap: 30px;
+    width: 100%;
+    height: 200px;
+    padding: 30px;
+    margin-top: 30px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+
+
+}
+
+.contacts a {
+    padding-left: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer {
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    z-index: 10;
+    /* ensures visibility above other content */
+}
+
+.offer-a {
+    background-color: blue;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 15px;
+    min-width: 100px;
+    white-space: nowrap;
+}
+
+.up-button {
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+    z-index: 20;
+    /* stays above the .offer */
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ff9800;
+    color: white;
+    font-size: 24px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #e68900;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+#sub-options {
+    display: none;
+    width: 200px;
+}
+
+#sub-options-box {
+    text-align: center;
+    justify-content: center;
+}
+
+.combo-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-row-gap: 120px;
+    grid-column-gap: 2px;
+    background-image: url('background img.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 20px;
+    justify-content: center;
+}
+
+.heading {
+    grid-column: span 6;
+    color: #f9f9f9;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.heading::after {
+    content: "";
+    display: block;
+    width: 7%;
+    height: 4px;
+    background-color: dodgerblue;
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.combo-container>div {
+    background-color: #7b7272;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+    /* Changed from fixed 350px */
+    height: 170px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 40px;
+}
+
+.combo-container h3 {
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: gold;
+    text-decoration-thickness: 3px;
+}
+
+.label,
+.value {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+/* Label row styling */
+.label h5 {
+    margin: 0;
+    font-size: 16px;
+    color: lightblue;
+
+}
+
+/* Value row styling */
+.value h6 {
+    margin: 0;
+    font-size: 16px;
+    color: limegreen;
+
+}
+
+.label,
+.value {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+/* First and second columns */
+.label h5,
+.value h6 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+/* Add vertical divider line between columns */
+.label h5:nth-child(2),
+.value h6:nth-child(2) {
+    border-left: 2px solid white;
+    /* or any color you like */
+}
+
+.offer-on a {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    width: 140px;
+    /* This width seems large for a button, verify intent */
+    /* height: 200px; Remove or adjust this if it's making buttons too tall */
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    /* To center the text within the button */
+    justify-content: center;
+    align-items: center;
+}
+
+.combo-container .offer-on {
+    background-color: darkseagreen;
+    width: 50%;
+    /* Smaller than others */
+    height: 100px;
+    /* Smaller height */
+    padding: 20px;
+
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-left: 130px;
+}
+
+.offer-on p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+
+.offer-on a:hover {
+    cursor: pointer;
+    background-color: rgb(72, 72, 242);
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.add-button {
+    background-color: #fd6569;
+    color: black;
+    border-radius: 100%;
+    padding: 20px 30px;
+    font-size: 40px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    grid-column: span 1;
+    margin: auto;
+    position: relative;
+    left: 40px;
+
+}
+
+
+
+.course-container {
+    background-image: url("c-background\ image.jpg");
+    /* Fixed file reference */
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Creates three equal columns */
+    gap: 15px;
+    height: 500px;
+    /* Adjust height dynamically */
+    overflow-y: auto;
+    /* Enables vertical scrolling */
+    padding: 20px;
+    border: 2px solid #333;
+    background-color: #f8f9fa;
+    margin-top: 30px;
+}
+
+/* Center main title */
+.course-container>p {
+    text-align: center;
+    grid-column: span 3;
+    /* Title spans all three columns */
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Define grid placement for course categories */
+.course-category-one {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    /* Creates 2 rows */
+    gap: 10px;
+    grid-column: span 3;
+    /* Spans all three columns */
+}
+
+.course-category-two {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    /* Creates 2 rows */
+    gap: 10px;
+    grid-column: span 3;
+    /* Spans all three columns */
+}
+
+.course-category-three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Two equal columns */
+    grid-template-rows: repeat(1, auto);
+    /* Two rows */
+    gap: 10px;
+    grid-column: span 3;
+    /* Ensures it takes full width */
+}
+
+
+
+/* Center each course category title */
+.course-category-one p,
+.course-category-two p,
+.course-category-three p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    grid-column: span 3;
+
+    color: rgb(129, 37, 37);
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Course category styling */
+.course-category-one,
+.course-category-two,
+.course-category-three {
+    background-color: rgba(214, 224, 234, 0.9);
+    color: #333;
+    padding: 20px;
+
+    border-radius: 8px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Individual Course Styling */
+.course {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    height: 400px;
+    width: 450px;
+    background-color: salmon;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 10px;
+    flex-direction: column;
+    /* Hover effect for courses */
+    transition: transform 0.3s ease;
+}
+
+.course:hover {
+    transform: scale(1.05);
+}
+
+/* Click effect (visual feedback) */
+.course:active {
+    transform: scale(0.95);
+}
+
+
+
+/* Style the REGISTER button */
+.course a {
+    background-color: white;
+    color: #ff9800;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.course a:hover {
+    background-color: #e68900;
+    color: white;
+}
+
+
+
+.sub-options {
+    width: 200px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 27px;
+    font-size: 16px;
+    border: 2px solid;
+    border-radius: 5px;
+    /* Rounded corners */
+    background-color: #f8f9fa;
+    /* Light background */
+    color: #333;
+    /* Text color */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect */
+.sub-options:hover {
+    background-color: #e3f2fd;
+    /* Light blue hover effect */
+}
+
+/* Focus Effect */
+.sub-options:focus {
+    outline: none;
+}
+
+
+#course {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid;
+    border-radius: 5px;
+    /* Rounded corners */
+    background-color: #f8f9fa;
+    /* Light background */
+    color: #333;
+    /* Text color */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+/* Hover Effect */
+#course:hover {
+    background-color: #e3f2fd;
+}
+
+/* Focus Effect */
+#course:focus {
+    outline: none;
+
+}
+
+/* Custom Dropdown Arrow */
+#course {
+    appearance: none;
+}
+
+
+
+
+
+
+
+
+
+.wt {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.gka {
+    color: blue;
+    font-style: italic;
+}
+
+.welcome {
+    margin: 50px auto;
+
+}
+
+.r-media {
+    margin-top: 20px;
+}
+
+.ig:hover {
+    color: fuchsia
+}
+
+.yt:hover {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Header Title Container & Logo Responsiveness --- */
+
+/* Base styles for the title-container */
+.title-container {
+    padding: 10px 20px;
+    border-radius: 10px;
+    /* Already has d-flex, flex-row, justify-content-center, align-items-center, text-center */
+    /* Add a small gap between h1 and img, if desired, to ensure consistent spacing */
+    gap: 10px;
+    /* This creates space directly between flex items */
+}
+
+/* Base styles for the H1 text */
+.title-container h1 {
+    color: #333;
+    /* Your existing color */
+    /* Bootstrap's display-5, display-md-3, display-lg-1 already handle font sizing based on breakpoints.
+       We'll only add overrides if those aren't small enough. */
+    line-height: 1.2;
+    /* Ensure consistent line height */
+    white-space: nowrap;
+    /* Prevents the "GK ACADEMY" text from wrapping onto multiple lines */
+    min-width: 0;
+    /* Allows text to shrink */
+    transition: font-size 0.3s ease;
+    /* Smooth transition for font size */
+}
+
+/* Base styles for the image logo */
+.title-container img {
+    height: 60px;
+    /* Base height for larger screens */
+    width: auto;
+    /* Maintain aspect ratio */
+    object-fit: contain;
+    /* Ensures the whole logo is visible within its bounds */
+    flex-shrink: 0;
+    /* Prevent the image from shrinking below its content size */
+    transition: height 0.3s ease;
+    /* Smooth transition for height changes */
+}
+
+
+
+/* Adjust for medium-small screens if Bootstrap's display classes are too large */
+@media (max-width: 991.98px) {
+
+    /* Adjust this breakpoint as needed (e.g., md breakpoint 767.98px if needed sooner) */
+    .title-container h1 {
+        font-size: 2.8rem !important;
+        /* Example: adjust h1 font size for slightly smaller screens */
+    }
+
+    .title-container img {
+        height: 50px;
+        /* Smaller logo for these screens */
+    }
+}
+
+/* For truly small screens (e.g., mobile phones) */
+@media (max-width: 767.98px) {
+
+    /* This breakpoint corresponds to Bootstrap's 'md' break */
+    .title-container h1 {
+        font-size: 2.5rem !important;
+        /* Even smaller for mobile phones */
+    }
+
+    .title-container img {
+        height: 48px !important;
+        /* Further reduce logo height */
+    }
+
+    /* You might want to remove gap or adjust it here if they get too close */
+    .title-container {
+        gap: 5px;
+        /* Reduce gap on smaller screens */
+    }
+}
+
+/* If you need even smaller on very small phones */
+@media (max-width: 575.98px) {
+
+    /* Bootstrap's 'sm' break */
+    .title-container h1 {
+        font-size: 2.3rem !important;
+    }
+
+    .title-container img {
+        height: 45px !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .title-container h1 {
+        font-size: 1.8rem !important;
+        
+        
+    }
+
+    .title-container img {
+        height: 30px;
+        
+
+    }
+
+}
